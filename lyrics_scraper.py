@@ -51,6 +51,9 @@ def tradmusic_co_uk():
 
 def main():
 	data = bglyrics_dotcom()+tradmusic_co_uk()
+	with open('lyrics.txt', 'w', encoding='utf-8') as file:
+		file.write(data)			
+					
 
 if __name__ == "__main__":
 	main()
